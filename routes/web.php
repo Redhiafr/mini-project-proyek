@@ -9,6 +9,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TransactionController;
 
@@ -28,6 +29,7 @@ Route::get('shop', [CustomerController::class, 'shop'])->name('shop');
 Route::get('shop/{id}', [CustomerController::class, 'filter'])->name('filter');
 Route::get('/detail/{id}', [CustomerController::class, 'show'])->name('detail');
 Route::middleware(['auth', 'customer'])->group(function () {
+    Route::resource('histories', HistoryController::class);
     Route::resource('shoppingCarts', ShoppingCartController::class)->only('index', 'store');
     Route::post('shoppingCarts/update', [ShoppingCartController::class, 'update'])->name('shoppingCarts.update');
     Route::get('shoppingCarts/{shoppingCart}/destroy', [ShoppingCartController::class, 'destroy'])->name('shoppingCarts.destroy');
