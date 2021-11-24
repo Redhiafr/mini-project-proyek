@@ -31,7 +31,7 @@
                         <a class="nav-link" href="{{ route('categories.index') }}">Kategori Produk</a>
                     </li>
                     <li class="{{ (request()->segment(1) == 'brands') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ route('brands.index') }}">Brands Produk</a>
+                        <a class="nav-link" href="{{ route('brands.index') }}">Merk Produk</a>
                     </li>
                     <li class="{{ (request()->segment(1) == 'products') ? 'active' : '' }}">
                         <a class="nav-link" href="{{ route('products.index') }}">Produk</a>

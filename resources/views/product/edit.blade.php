@@ -48,7 +48,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="brand">Brand Produk</label> 
+                                    <label for="brand">Merk Produk</label> 
                                     <select class="form-control select2" name="brand_id" id="brand_id">
                                     @foreach($brand as $bad)
                                         <option value="{{$bad->id}}" {{ $product->brand_id == $bad->id ? 'selected' : '' }}>{{$bad->name}}</option>

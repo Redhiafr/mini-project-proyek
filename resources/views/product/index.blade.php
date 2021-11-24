@@ -21,7 +21,7 @@
                         <div class="card-header">
                             <h4>
                                 <a href="{{ route('products.create') }}"
-                                    class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Buat Product Baru</a>
+                                    class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Buat Produk Baru</a>
                             </h4>
                         </div>
                         <div class="card-body">
@@ -32,10 +32,10 @@
                                             <th class="text-center" style="width: 10px">
                                                 #
                                             </th>
-                                            <th class="text-center">Nama Product</th>
-                                            <th class="text-center">Harga Product</th>
-                                            <th class="text-center">Kategori Product</th>
-                                            <th class="text-center">Brand Product</th>
+                                            <th class="text-center">Nama Produk</th>
+                                            <th class="text-center">Harga Produk</th>
+                                            <th class="text-center">Kategori Produk</th>
+                                            <th class="text-center">Merk Produk</th>
                                             <th class="text-center" style="width: 220px">Actions</th>
                                         </tr>
                                     </thead>

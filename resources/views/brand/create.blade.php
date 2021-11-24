@@ -6,13 +6,13 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Brands Produk</h1>
+            <h1>Merk Produk</h1>
             <div class="section-header-breadcrumb">
                 <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                 <div class="breadcrumb-item"><a href="#">Data Produk</a></div>
-                <div class="breadcrumb-item"><a href="{{ route('categories.index') }}">Brands
+                <div class="breadcrumb-item"><a href="{{ route('categories.index') }}">Merk
                         Produk</a></div>
-                <div class="breadcrumb-item">Buat Brands Baru</div>
+                <div class="breadcrumb-item">Buat Merk Baru</div>
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                             <form action="{{ route('brands.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <label>Nama Brand</label>
+                                    <label>Nama Merk</label>
                                     <input type="text" class="form-control" name="name">
                                 </div>
                                 <div class="form-group">
@@ -32,7 +32,7 @@
                                     <textarea type="text" class="form-control" name="description"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Gambar Brand</label> <br>
+                                    <label>Gambar Merk</label> <br>
                                     <input type="file" name="image">
                                 </div>
                                 <div class="form-group">
