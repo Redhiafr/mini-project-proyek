@@ -2,7 +2,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('admin.dashboard') }}">Sistem Swalayan Online</a>
+            <a href="{{ route('admin.dashboard') }}">Podo Moro</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('admin.dashboard') }}">SSO</a>
