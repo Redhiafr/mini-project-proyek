@@ -48,7 +48,7 @@
                             </div>
                             <div class="filter-range-wrap">
                                 <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-                                data-min="33" data-max="99"></div>
+                                data-min="10" data-max="99"></div>
                                 <div class="range-slider">
                                     <div class="price-input">
                                         <p>Price:</p>

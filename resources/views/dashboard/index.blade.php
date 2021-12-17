@@ -68,9 +68,10 @@
                     <div class="card-wrap">
                         <div class="card-header">
                             <h4>Jumlah produk terjual</h4>
+                                
                         </div>
                         <div class="card-body">
-                            123
+                            {{ $transaction }}
                         </div>
                     </div>
                 </div>

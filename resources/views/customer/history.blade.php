@@ -30,6 +30,7 @@
                                     <th class="text-center">No</th>
                                     <th class="text-center">Tanggal Pemesanan</th>
                                     <th class="text-center">Produk</th>
+                                    <th class="text-center">Gambar</th>
                                     <th class="text-center">Total</th>
                                     <th class="text-center">Pembayaran</th>
                                     <th class="text-center">Status</th>
@@ -43,7 +44,9 @@
                                         @endphp
                                         <td class="text-center">{{ $loop->iteration }}</td>
                                         <td class="text-center">{{ $o->created_at }}</td>
-                                        <td class="text-center">{{ $o->product_id }}</td>
+                                        {{--  <td class="text-center">{{ $o->order}}</td>  --}}
+                                        <td class="text-center">{{ $o->product->name }}</td>
+                                        <img src="{{ asset('storage/' . $o->product->image->image_path) }}" alt="" width="90px" height="90px">
                                         <td class="text-center">Rp {{ number_format($o->total, 0, ',', '.') }}</td>
                                         <td class="text-center">{{  $o->payment->name }}</td>
                                         <td class="text-center">
@@ -56,7 +59,19 @@
                                         </td>
                                     </tr>
                                 @endforeach
-                                
+                                {{--  @foreach ($histories->product as $item)
+                                        <tr>
+                                            <td class="cart__product__item">
+                                                <img src="{{ asset('storage/' . $item->image->image_path) }}" alt="" width="90px" height="90px">
+                                                <div class="cart__product__item__title">
+                                                    <h6 style="word-wrap: break-word; width: 400px">{{ $item->name }}</h6>
+                                                </div>
+                                            </td>
+                                            <td class="cart__price">Rp {{ number_format($item->price, 0, ',', '.') }}</td>
+                                            <td class="cart__quantity">{{ $item->pivot->qty }}</td>
+                                            <td class="cart__total">Rp {{ number_format(($item->price * $item->pivot->qty), 0, ',', '.') }}</td>
+                                        </tr>
+                                    @endforeach  --}}
                             </tbody>
                         </table>
                         
